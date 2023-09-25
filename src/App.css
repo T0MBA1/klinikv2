@@ -36,3 +36,119 @@
     transform: rotate(360deg);
   }
 }
+
+
+.login-card {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  background: url("../src/assets/images/login_bg.jpg");
+  background-position: center;
+  padding: 30px 12px;
+}
+.login-card .logo {
+  display: block;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.login-card .btn-showcase .btn {
+  line-height: 1;
+  padding: 10px 15px;
+  margin: 0;
+}
+.login-card .btn-showcase .btn + .btn {
+  margin-left: 5px;
+}
+.login-card .btn-showcase .btn svg {
+  height: 16px;
+  vertical-align: bottom;
+}
+.login-card .login-main {
+  width: 450px;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 37px rgba(8, 21, 66, 0.05);
+  margin: 0 auto;
+  background-color: #fff;
+}
+.login-card .login-main .theme-form h4, .login-card .login-main .theme-form .h4 {
+  margin-bottom: 5px;
+}
+.login-card .login-main .theme-form label {
+  font-size: 15px;
+  letter-spacing: 0.4px;
+}
+.login-card .login-main .theme-form .checkbox label::before {
+  background-color: #f9f9fa;
+  border: 1px solid #dfdfdf;
+}
+.login-card .login-main .theme-form .or {
+  position: relative;
+}
+.login-card .login-main .theme-form .or:before {
+  content: "";
+  position: absolute;
+  width: 65%;
+  height: 2px;
+  background-color: #f3f3ff;
+  top: 9px;
+  z-index: 0;
+  right: 0;
+}
+.login-card .login-main .theme-form input {
+  background-color: #f3f3ff;
+  transition: all 0.3s ease;
+}
+.login-card .login-main .theme-form input::-webkit-input-placeholder {
+  color: #999999;
+}
+.login-card .login-main .theme-form input:hover, .login-card .login-main .theme-form input:focus {
+  border: 1px solid #b9c1cc;
+  box-shadow: none !important;
+  transition: all 0.3s ease;
+}
+.login-card .login-main .theme-form p {
+  margin-bottom: 25px;
+  font-size: 14px;
+  color: #898989;
+}
+.login-card .login-main .theme-form .form-group {
+  margin-bottom: 10px;
+  position: relative;
+}
+.login-card .login-main .theme-form .link {
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+
+.show-hide {
+  position: absolute;
+  top: 52px;
+  right: 20px;
+  transform: translateY(-50%);
+}
+.show-hide span {
+  cursor: pointer;
+  font-size: 13px;
+  color: var(--theme-deafult);
+}
+.show-hide span.show:before {
+  content: "show";
+}
+.show-hide span:before {
+  content: "hide";
+}
+
+.needs-validation .invalid-feedback {
+  color: #898989;
+}
+.needs-validation .show-hide {
+  right: 30px;
+}
+.needs-validation .invalid-tooltip {
+  top: 10px;
+  right: 10px;
+}

@@ -1,5 +1,7 @@
+import LoginOne from "components/LoginOne";
+
 export default function Auth() {
     return(
-        <div>Auth Page</div>
+        <LoginOne />
     )
 }
